@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Darker+Grotesque|Montserrat|Roboto:100&display=swap">);
+
+body {
+  font-family: "Cinzel", serif;
+  color: #fff;
+}
+.thinFont {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  background-image: url("../images/logo_splash_smaller.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center center;
+}
+.spiderman {
+  background-image: url("../images/film_stills/spiderverse_crop.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center center;
+}
+
+.bgColorTrans {
+  background-color: rgba(0, 14, 30, 0.3);
+}
+
+.bgColorTransMed {
+  background-color: rgba(0, 14, 30, 0.66);
+}
+
+.bgColorTransStrong {
+  background-color: rgba(0, 14, 30, 0.8);
+}
+
+.grayTrans {
+  background-color: rgba(220, 217, 214, 0.3);
+}
+
+.textOutline {
+  font-size: 8rem;
+}
+
+.textLarge {
+  font-size: 3vmax;
+}
+
+.h1Splash {
+  padding: 100px 10%;
+}
+
+.aboutMeGrad {
+  background-image: linear-gradient(#718096, #000e1e);
+}
+
+.marginMenuBarText {
+  margin-left: 13%;
+  margin-right: 22%;
+}
+
+.rolesMargin {
+  margin-top: 23%;
+}
+
+.imgTest {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before,
+span:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.25vmin;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
