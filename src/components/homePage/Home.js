@@ -3,16 +3,18 @@ import Splash from "./Splash";
 import WorkOverview from "./WorkOverview";
 import ReactProjectsOveriew from "./ReactProjectsOveriew";
 import AboutMe from "./AboutMeOverview";
-import FeatureFilmWork from "./FeatureFilmWork";
+import FeatureFilmWork from "./FeatureFilmWorkOverview";
+import ContactForum from "../ContactForum";
 
 function Home() {
   return (
-    <div className="h-screen">
+    <div>
       <Splash />
       <WorkOverview />
       <ReactProjectsOveriew />
       <FeatureFilmWork />
       <AboutMe />
+      <ContactForum />
     </div>
   );
 }

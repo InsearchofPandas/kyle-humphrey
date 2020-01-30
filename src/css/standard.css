@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cinzel|Darker+Grotesque|Montserrat|Roboto:100&display=swap">);
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Montserrat|Roboto:100,300,400,500,900&display=swap">);
 
 body {
   font-family: "Cinzel", serif;
@@ -6,21 +6,37 @@ body {
 }
 .thinFont {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.heavyFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.mheavyFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.eheavyFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.blackFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 .logo {
-  background-image: url("../images/logo_splash_smaller.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center center;
-}
-.spiderman {
-  background-image: url("../images/film_stills/spiderverse_crop.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center center;
+  background-image: url("../images/logo_final.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bgColorTrans {
   background-color: rgba(0, 14, 30, 0.3);
+}
+.bgColorTransButton {
+  background-color: rgba(0, 14, 30, 0.45);
 }
 
 .bgColorTransMed {
@@ -35,8 +51,12 @@ body {
   background-color: rgba(220, 217, 214, 0.3);
 }
 
+.footerColor {
+  background-color: #000b17;
+}
+
 .textOutline {
-  font-size: 8rem;
+  font-size: 8vw;
 }
 
 .textLarge {
@@ -66,14 +86,22 @@ body {
   z-index: -1;
 }
 
-span {
+.z--10 {
+  z-index: -10;
+}
+
+.boxShadow1 {
+  box-shadow: 10px 10px 8px #01060f;
+}
+
+.interactiveHover {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-span:before,
-span:after {
+.interactiveHover:before,
+.interactiveHoverafter {
   content: "";
   position: absolute;
   width: 0%;
@@ -83,22 +111,22 @@ span:after {
   background: #fff;
 }
 
-span:before {
+.interactiveHover:before {
   left: -2.5px;
 }
-span:after {
+.interactiveHoverafter {
   right: 2.5px;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+.interactiveHover:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+.interactiveHover:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;

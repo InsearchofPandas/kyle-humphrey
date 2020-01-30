@@ -1,0 +1,14 @@
+[
+  {
+    "title": "kylehumphrey.com",
+    "image": "kylehumphrey.jpg",
+    "about": "",
+    "link": "/work/codeing/kyle-humphrey"
+  },
+  {
+    "title": "Neu Weather",
+    "image": "neuWeather.jpg",
+    "about": "React Native",
+    "link": "/work/codeing/neu-weather"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Acey Deucey",
+    "link": "https://aceydeucey.kylehumphrey.com/",
+    "image": "acey.jpg"
+  },
+  {
+    "title": "Halloween Candy",
+    "link": "https://candy.kylehumphrey.com/",
+    "image": "candy.jpg"
+  },
+  {
+    "title": "Unsplash Explorer",
+    "link": "https://unsplash.kylehumphrey.com/",
+    "image": "unsplash.jpg"
+  },
+  {
+    "title": "Weather Report",
+    "link": "https://weather.kylehumphrey.com/",
+    "image": "weather.jpg"
+  },
+  {
+    "title": "Product Order Form",
+    "link": "https://orders.kylehumphrey.com/",
+    "image": "order.jpg"
+  },
+  {
+    "title": "World Clock",
+    "link": "https://time.kylehumphrey.com/",
+    "image": "time.jpg"
+  },
+  {
+    "title": "Best Candidate",
+    "link": "https://candidate.kylehumphrey.com/",
+    "image": "canditate.jpg"
+  },
+  {
+    "title": "Connect Four",
+    "link": "https://connect4.kylehumphrey.com/",
+    "image": "connect.jpg"
+  },
+  {
+    "title": "Mortgage Calculator",
+    "link": "https://mortgage.kylehumphrey.com/",
+    "image": "mortgage.jpg"
+  },
+  {
+    "title": "Studio Ghibli",
+    "link": "https://ghibli.kylehumphrey.com/",
+    "image": "ghibli.jpg"
+  }
+]
