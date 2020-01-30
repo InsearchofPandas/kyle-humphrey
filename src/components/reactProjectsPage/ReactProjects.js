@@ -25,13 +25,13 @@ function ReactProjects({ location }) {
               A collection of self directed design and coding projects
             </p>
           </div>
-
           <section className="pb-10 ">
             {fullApps.map(app => (
               <FullAppModule
                 key={app.title}
                 title={app.title}
-                link={"www.kylehumphrey.com"}
+                about={app.about}
+                link={app.link}
                 image_name={app.image}
               />
             ))}

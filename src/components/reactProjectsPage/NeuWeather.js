@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 
 export const NeuWeather = () => {
   return (
@@ -12,7 +11,7 @@ export const NeuWeather = () => {
       <div className="w-full flex flex-wrap justify-center">
         <img
           src={require("../../images/code_stills/dark_mode_square.jpg")}
-          className="w-5/12"
+          className=" w-full md:w-5/12"
           alt="dark mode"
         />
         <p className=" thinFont text-center text-blue-300 w-full  py-2">
@@ -44,7 +43,7 @@ export const NeuWeather = () => {
       <div className="w-full flex flex-wrap justify-center py-10">
         <img
           src={require("../../images/code_stills/layout_wide_neu_weather_full.jpg")}
-          className="w-10/12"
+          className=" w-full md:w-10/12"
           alt="dark mode / light mode"
         />
         <p className="thinFont text-center text-blue-300 w-full py-2">
@@ -61,7 +60,7 @@ export const NeuWeather = () => {
           </p>
           <img
             src={require("../../images/code_stills/neu_wireframe.jpg")}
-            className="w-8/12"
+            className="w-full md:w-8/12"
             alt="wireframe"
           />
         </div>
@@ -71,7 +70,7 @@ export const NeuWeather = () => {
           </p>
           <img
             src={require("../../images/code_stills/neu_stages.jpg")}
-            className="w-8/12"
+            className="w-full md:w-8/12"
             alt="drafts"
           />
         </div>
@@ -81,7 +80,7 @@ export const NeuWeather = () => {
           </p>
           <img
             src={require("../../images/code_stills/concept_frames.jpg")}
-            className="w-8/12"
+            className="w-full md:w-8/12"
             alt="visual functionality"
           />
         </div>
