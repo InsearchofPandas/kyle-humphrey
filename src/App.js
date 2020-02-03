@@ -13,6 +13,7 @@ import FilmWork from "./components/filmWorkPage/FilmWork";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactPage";
 import { NeuWeather } from "./components/reactProjectsPage/NeuWeather";
+import { MenuAnim } from "./components/reactProjectsPage/MenuAnim";
 import { KyleHumphrey } from "./components/reactProjectsPage/KyleHumphrey";
 require("dotenv").config();
 
@@ -36,6 +37,11 @@ function App() {
               exact
               path="/work/codeing/neu-weather"
               component={NeuWeather}
+            />
+            <Route
+              exact
+              path="/work/codeing/menu-animation"
+              component={MenuAnim}
             />
             <Route path="/work/film-games" component={FilmWork} />
             <Route path="/aboutme" component={AboutMe} />

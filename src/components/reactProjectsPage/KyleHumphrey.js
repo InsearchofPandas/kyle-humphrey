@@ -9,7 +9,9 @@ export const KyleHumphrey = () => {
         </h2>
       </div>
       <div className="w-full flex flex-wrap justify-center pb-4">
-        <h3 className="w-full  p-2 md:w-7/12 text-2xl md:text-3xl">The Site</h3>
+        <h3 className="w-full  p-2 pt-8 md:w-7/12 text-2xl md:text-3xl">
+          The Site
+        </h3>
         <p className="thinFont text-xl p-2 md:w-7/12">
           Please view the code here on{" "}
           <a

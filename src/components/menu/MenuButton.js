@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { animated, useTransition, useSpring } from "react-spring";
 import Portal from "../utilities/Portal";
+import { HambugerAnimMenu } from "../utilities/HambugerAnimMenu";
 
 import Menu from "./Menu";
 
@@ -24,13 +25,14 @@ const MenuButton = ({ hideMenuBar }) => {
       <Portal>
         <MenuList setMenuToggle={setMenuToggle} isMenuToggled={isMenuToggled} />
         <Menu animation={fader} isMenuToggled={isMenuToggled} />
-        {/* {fade.map(
-          ({ item, key: index, props: animation }) =>
-            item && <Menu index={index} animation={animation} />
-        )} */}
       </Portal>
-
-      {fadeMenuButton.map(({ item, key, props }) =>
+      <div
+        className="w-12  items-center pt-20 "
+        onClick={() => setMenuToggle(!isMenuToggled)}
+      >
+        <HambugerAnimMenu toggle={isMenuToggled} />
+      </div>
+      {/* {fadeMenuButton.map(({ item, key, props }) =>
         item ? (
           <animated.div style={props} key={key}>
             <button>
@@ -55,7 +57,7 @@ const MenuButton = ({ hideMenuBar }) => {
             </button>
           </animated.div>
         )
-      )}
+      )} */}
     </>
   );
 };

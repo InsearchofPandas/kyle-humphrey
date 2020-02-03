@@ -6,7 +6,7 @@ function WorkOverview() {
   return (
     <>
       <section id="work-overview" className="aboutMeGrad w-full ">
-        <div className="flex justify-center py-24 bgColorTransStrong border-b border-gray-700">
+        <div className="flex justify-center py-24 bgColorTransStrong ">
           <p className=" text-4xl font-semibold md:tracking-wider thinFont text-center px-2">
             I am a developer specializing in React.js with a cognizance for user
             experience and a heart for design

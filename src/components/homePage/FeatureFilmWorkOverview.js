@@ -8,13 +8,10 @@ function FeatureFilmWorkOverview() {
 
   return (
     <>
-      <section
-        id="film-work-overview"
-        className="bg-bgColor py-10 pb-16 border-b border-gray-700"
-      >
+      <section id="film-work-overview" className="bg-bgColor py-10 pb-16 ">
         <div className="w-full flex justify-center  ">
           <Link to="/work/film-games">
-            <h3 className="text-2xl md:text-4xl  font-bold border-b border-gray-700 mb-3">
+            <h3 className="text-2xl md:text-4xl font-bold border-b border-gray-700 mb-5">
               Feature Film And Games
             </h3>
           </Link>

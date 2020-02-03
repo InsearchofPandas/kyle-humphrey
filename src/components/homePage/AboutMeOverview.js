@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 function AboutMe() {
   return (
     <>
-      <section
-        id="about-me-overview"
-        className="bg-bgColor py-10  border-b border-gray-700 "
-      >
+      <section id="about-me-overview" className="bg-bgColor py-10  ">
         <div className="w-full flex justify-center  ">
           <Link to="/aboutme">
             <h3 className="text-3xl md:text-4xl  font-bold border-b border-gray-700">
@@ -16,7 +13,7 @@ function AboutMe() {
           </Link>
         </div>
         <div className="w-full flex justify-center">
-          <div className="  flex justify-center items-start my-16 py-12 md:w-11/12 h-full flex-wrap footerColor border border-gray-900  px-2">
+          <div className="  flex justify-center items-start mt-5 mb-16 py-12 md:w-11/12 h-full flex-wrap footerColor border border-gray-900  px-2">
             <div className="w-full md:w-5/12  flex justify-center items-center ">
               <img
                 className="11/12 md:w-2/3 rounded-full"
