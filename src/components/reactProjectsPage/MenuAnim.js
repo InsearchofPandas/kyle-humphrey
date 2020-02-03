@@ -106,6 +106,19 @@ export const MenuAnim = () => {
         </div>
         <p className="w-full text-center thinFont text-xl">tap the bars!</p>
       </div>
+      <div className="w-full flex flex-wrap justify-center pb-4">
+        <p className="thinFont text-lg md:text-xl p-2 md:w-7/12">
+          See the{" "}
+          <a
+            className=" text-xl md:text-2xl text-blue-400"
+            href="https://github.com/InsearchofPandas/kyle-humphrey/blob/master/src/components/utilities/HambugerAnimMenu.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Code
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

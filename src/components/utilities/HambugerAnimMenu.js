@@ -1,10 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 export const HambugerAnimMenu = ({ toggle }) => {
-  const [isOpen, setIsOpen] = useState(true);
-
   const variants = {
     open: { y: [-73, 0, 0, 0], rotate: [0.33, 0.33, 0, 0] },
     closed: {
@@ -34,7 +31,6 @@ export const HambugerAnimMenu = ({ toggle }) => {
         viewBox="0 0 270 188"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.025 }}
       >
         <motion.rect
