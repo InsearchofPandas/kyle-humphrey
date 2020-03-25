@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "dotenv": "^8.2.0",
     "framer-motion": "^1.8.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-images-viewer": "^1.6.2",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
     "react-router-scroll-top": "^0.2.1",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
     "redux": "^4.0.4",
+    "tailwindcss": "^1.2.0",
     "video-react": "^0.14.1"
   },
   "scripts": {
@@ -39,9 +43,16 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.10.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "tailwindcss": "^1.0.4"
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "^2.0.2"
   }
 }

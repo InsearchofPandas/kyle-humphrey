@@ -1,32 +1,38 @@
-@import url("https://fonts.googleapis.com/css?family=Cinzel|Montserrat|Roboto:100,300,400,500,900&display=swap">);
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Montserrat|Roboto:100,300,400,500,900&display=swap'>);
 
 body {
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   color: #fff;
 }
+
+.cinzel {
+  font-family: 'Cinzel', serif;
+  color: #fff;
+}
+
 .thinFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 .heavyFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 .mheavyFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 .eheavyFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 .blackFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
 
 .logo {
-  background-image: url("../images/logo_final.jpg");
+  background-image: url('../images/logo_final.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,7 +108,7 @@ body {
 
 .interactiveHover:before,
 .interactiveHoverafter {
-  content: "";
+  content: '';
   position: absolute;
   width: 0%;
   height: 0.25vmin;

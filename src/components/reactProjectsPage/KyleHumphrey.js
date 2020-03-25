@@ -1,6 +1,7 @@
 import React from "react";
+import BackButtonAnim from "../utilities/BackButtonAnim";
 
-export const KyleHumphrey = () => {
+export default function KyleHumphrey() {
   return (
     <div className="bg-bgColor pt-32 md:pt-48 h-screen">
       <div className="w-full flex justify-center">
@@ -22,8 +23,14 @@ export const KyleHumphrey = () => {
           >
             github
           </a>
+          <div>
+            <div className="pt-12">
+            <BackButtonAnim />
+            </div>
+            
+          </div>
         </p>
       </div>
     </div>
   );
-};
+}

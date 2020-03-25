@@ -14,8 +14,12 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactPage";
 import { NeuWeather } from "./components/reactProjectsPage/NeuWeather";
 import { MenuAnim } from "./components/reactProjectsPage/MenuAnim";
-import { KyleHumphrey } from "./components/reactProjectsPage/KyleHumphrey";
+import { BackButtonAnimPage } from "./components/reactProjectsPage/BackButtonAnimPage";
+import KyleHumphrey from "./components/reactProjectsPage/KyleHumphrey";
+
 require("dotenv").config();
+
+const penis = "shit";
 
 function App() {
   const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
@@ -27,21 +31,26 @@ function App() {
         <Switch>
           <ScrollToTop>
             <Route exact path="/" component={Home} />
-            <Route exact path="/work/codeing" component={ReactProjects} />
+            <Route exact path="/work/coding" component={ReactProjects} />
             <Route
               exact
-              path="/work/codeing/kyle-humphrey"
+              path="/work/coding/kyle-humphrey"
               component={KyleHumphrey}
             />
             <Route
               exact
-              path="/work/codeing/neu-weather"
+              path="/work/coding/neu-weather"
               component={NeuWeather}
             />
             <Route
               exact
-              path="/work/codeing/menu-animation"
+              path="/work/coding/menu-animation"
               component={MenuAnim}
+            />
+            <Route
+              exact
+              path="/work/coding/backbutton-animation"
+              component={BackButtonAnimPage}
             />
             <Route path="/work/film-games" component={FilmWork} />
             <Route path="/aboutme" component={AboutMe} />

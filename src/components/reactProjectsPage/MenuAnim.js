@@ -106,7 +106,7 @@ export const MenuAnim = () => {
         </div>
         <p className="w-full text-center thinFont text-xl">tap the bars!</p>
       </div>
-      <div className="w-full flex flex-wrap justify-center pb-4">
+      <div className="w-full flex flex-wrap justify-center pb-8 border-b border-gray-700">
         <p className="thinFont text-lg md:text-xl p-2 md:w-7/12">
           See the{" "}
           <a
@@ -119,6 +119,7 @@ export const MenuAnim = () => {
           </a>
         </p>
       </div>
+      
     </div>
   );
 };

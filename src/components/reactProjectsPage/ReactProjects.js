@@ -36,7 +36,7 @@ function ReactProjects({ location }) {
               />
             ))}
           </section>
-          {/* Codeing Sketches bellow */}
+          {/* coding Sketches bellow */}
 
           <div className="w-full  flex justify-center flex-wrap ">
             <h3 className=" text-2xl border-b border-gray-900 pt-4 ">

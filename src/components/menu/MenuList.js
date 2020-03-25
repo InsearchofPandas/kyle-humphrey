@@ -14,7 +14,7 @@ const MenuList2 = ({ setMenuToggle, isMenuToggled }) => {
     },
     {
       title: " React Projects",
-      link: "/work/codeing",
+      link: "/work/coding",
       key: 2,
       onClickFunction: () => setMenuToggle(!isMenuToggled)
     },

@@ -14,7 +14,7 @@ function ReactProjectsOveriew() {
         <div className="w-full flex justify-center my-5 ">
           <div className="  flex  flex-wrap justify-center footerColor  pb-10">
             <div className="w-full  flex justify-center  ">
-              <Link to="/work/codeing">
+              <Link to="/work/coding">
                 <h3 className="text-2xl md:text-4xl pt-10 mb-4 font-bold border-b border-gray-700">
                   React Projects
                 </h3>
@@ -44,7 +44,7 @@ function ReactProjectsOveriew() {
               ))}
             </section>
 
-            {/* Codeing Exercises / Sketches bellow */}
+            {/* coding Exercises / Sketches bellow */}
 
             <div className="w-full  flex justify-center flex-wrap ">
               <h3 className=" text-2xl border-b border-gray-900 pt-4 ">
@@ -82,7 +82,7 @@ function ReactProjectsOveriew() {
           </div>
         </div>
         {/* <div className="flex justify-center ">
-          <Link to="/work/codeing">
+          <Link to="/work/coding">
             <button className="md:text-xl thinFont border border-gray-700 rounded py-1 px-2 hover:text-blue-700 m-2">
               See More
             </button>
