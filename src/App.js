@@ -15,7 +15,11 @@ import ContactForm from "./components/ContactPage";
 import NeuWeather from "./components/reactProjectsPage/NeuWeather";
 import MenuAnim from "./components/reactProjectsPage/MenuAnim";
 import TriviaGame from "./components/reactProjectsPage/TriviaGame";
+import WordFinder from "./components/reactProjectsPage/WordFinder";
+import Validator from "./components/reactProjectsPage/Validator";
 import KyleHumphrey from "./components/reactProjectsPage/KyleHumphrey";
+import InfiniteScroll from "./components/reactProjectsPage/InfiniteScroll";
+import TheaterPicker from "./components/reactProjectsPage/TheaterPicker";
 
 require("dotenv").config();
 
@@ -50,12 +54,33 @@ function App() {
               path="/work/coding/trivia-game"
               component={TriviaGame}
             />
+            <Route
+              exact
+              path="/work/coding/word-finder"
+              component={WordFinder}
+            />
+            <Route
+              exact
+              path="/work/coding/form-validator"
+              component={Validator}
+            />
+            <Route
+              exact
+              path="/work/coding/infinite-scroll"
+              component={InfiniteScroll}
+            />
+            <Route
+              exact
+              path="/work/coding/theater-picker"
+              component={TheaterPicker}
+            />
 
             <Route path="/work/film-games" component={FilmWork} />
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={ContactForm} />
           </ScrollToTop>
         </Switch>
+
         <Footer />
       </animated.div>
     </Router>

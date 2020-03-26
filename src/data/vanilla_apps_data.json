@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Word Finder",
+    "image": "word_finder.jpg",
+    "about": "JS, REGEX, CSS",
+    "link": "/work/coding/word-finder"
+  },
+  {
+    "title": "Form Validator",
+    "image": "validator.jpg",
+    "about": "JS, REGEX, CSS",
+    "link": "/work/coding/form-validator"
+  },
+  {
+    "title": "Infinite Scroll Blog",
+    "image": "infinite.jpg",
+    "about": "JS, JSONPlaceholder, CSS",
+    "link": "/work/coding/infinite-scroll"
+  },
+  {
+    "title": "Theater Seat Picker",
+    "image": "theater.jpg",
+    "about": "JS, Local Storage, CSS",
+    "link": "/work/coding/theater-picker"
+  }
+]

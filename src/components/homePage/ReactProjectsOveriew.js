@@ -6,6 +6,7 @@ import ExerciseAppModule from "./ExerciseAppModule";
 import codeSketches from "../../data/code_sketches_data.json";
 import fullApps from "../../data/full_apps_data.json";
 import exerciseApps from "../../data/exercise_apps_data.json";
+import vanillaApps from "../../data/vanilla_apps_data.json";
 
 function ReactProjectsOveriew() {
   return (
@@ -75,8 +76,8 @@ function ReactProjectsOveriew() {
                 and not utilizing any JS frameworks
               </p>
 
-              <div className="w-full flex md:px-10 flex  py-2 mb-10">
-                {exerciseApps.map((app) => (
+              <div className="w-full flex md:px-10 flex  py-2 mb-10 flex-wrap">
+                {vanillaApps.map((app) => (
                   <ExerciseAppModule
                     image={app.image}
                     title={app.title}
@@ -87,6 +88,9 @@ function ReactProjectsOveriew() {
                 ))}
               </div>
 
+              <h3 className=" text-2xl border-b border-gray-900 pt-4 ">
+                Early React Apps
+              </h3>
               <p className="text-center text-sm thinFont w-full py-2">
                 Many projects below are not adaptive or responsive and can only
                 be viewed accurately on a computer browser

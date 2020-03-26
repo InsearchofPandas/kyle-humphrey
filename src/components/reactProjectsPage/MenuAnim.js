@@ -89,8 +89,7 @@ export default function MenuAnim() {
           Smooth SVG Animation
         </h3>
         <p className="thinFont text-lg md:text-xl p-2 pb-12 md:w-7/12">
-          SVG drawn in Figma and then animated with the aid of the
-{" "}
+          SVG drawn in Figma and then animated with the aid of the &nbsp;
           <a
             className=" text-xl md:text-2xl text-blue-400"
             href="https://www.framer.com/motion/"
@@ -112,7 +111,7 @@ export default function MenuAnim() {
       </div>
       <div className="w-full flex flex-wrap justify-center pb-8 ">
         <p className="thinFont text-lg md:text-xl p-2 md:w-7/12">
-          See the
+          See the &nbsp;
           <a
             className=" text-xl md:text-2xl text-blue-400"
             href="https://github.com/InsearchofPandas/kyle-humphrey/blob/master/src/components/utilities/HambugerAnimMenu.js"

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ExerciseAppModule({ image, title, link, about }) {
   return (
     <Link to={link}>
-      <div className=" w-full md:px-12 max-w-xl">
+      <div className=" w-full md:p-4 max-w-md">
         <p className="w-full text-center py-1">{title}</p>
         <div className="relative">
           <motion.div
