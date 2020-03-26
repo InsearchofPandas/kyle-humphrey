@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CodeSketchModule } from "./CodeSketchModule";
+import CodeSketchModule from "./CodeSketchModule";
 import FullAppModule from "./FullAppModule";
-import { ExerciseAppModule } from "./ExerciseAppModule";
+import ExerciseAppModule from "./ExerciseAppModule";
 import codeSketches from "../../data/code_sketches_data.json";
 import fullApps from "../../data/full_apps_data.json";
 import exerciseApps from "../../data/exercise_apps_data.json";
@@ -33,7 +33,7 @@ function ReactProjectsOveriew() {
             </div>
 
             <section className="pb-10 ">
-              {fullApps.map(app => (
+              {fullApps.map((app) => (
                 <FullAppModule
                   key={app.title}
                   title={app.title}
@@ -51,17 +51,38 @@ function ReactProjectsOveriew() {
                 Coding Sketches
               </h3>
               <p className="text-center text-sm md:text-lg thinFont w-full py-2">
-                A collection of self directed unpolished applications to learn
-                coding workflows, libraries, and techniques.
+                A collection of self directed and tutorial led applications /
+                exercises to learn coding workflows, libraries, and techniques.
               </p>
 
-              <div className="w-full md:px-10 flex justify-between py-2 mb-10">
-                {exerciseApps.map(app => (
+              <div className="w-full flex md:px-10 flex  py-2 mb-10">
+                {exerciseApps.map((app) => (
                   <ExerciseAppModule
                     image={app.image}
                     title={app.title}
                     key={app.title}
                     link={app.link}
+                    about={app.about}
+                  />
+                ))}
+              </div>
+
+              <h3 className=" text-2xl border-b border-gray-900 pt-4 ">
+                Vanilla JS Projects
+              </h3>
+              <p className="text-center text-sm md:text-lg thinFont w-full py-2">
+                This section is composed of applications built with Javascript
+                and not utilizing any JS frameworks
+              </p>
+
+              <div className="w-full flex md:px-10 flex  py-2 mb-10">
+                {exerciseApps.map((app) => (
+                  <ExerciseAppModule
+                    image={app.image}
+                    title={app.title}
+                    key={app.title}
+                    link={app.link}
+                    about={app.about}
                   />
                 ))}
               </div>
@@ -71,7 +92,7 @@ function ReactProjectsOveriew() {
                 be viewed accurately on a computer browser
               </p>
             </div>
-            {codeSketches.map(sketch => (
+            {codeSketches.map((sketch) => (
               <CodeSketchModule
                 image={sketch.image}
                 title={sketch.title}

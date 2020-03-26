@@ -1,6 +1,7 @@
 import React from "react";
+import BackButtonAnim from "../utilities/BackButtonAnim";
 
-export const NeuWeather = () => {
+export default function NeuWeather() {
   return (
     <div className="bg-bgColor pt-32 md:pt-48">
       <div className="w-full flex justify-center">
@@ -47,7 +48,7 @@ export const NeuWeather = () => {
           alt="dark mode / light mode"
         />
         <p className="thinFont text-center text-blue-300 w-full py-2">
-          Dark Mode / Light Mode{" "}
+          Dark Mode / Light Mode
         </p>
       </div>
       <div className="w-full flex flex-wrap justify-center py-4">
@@ -86,6 +87,13 @@ export const NeuWeather = () => {
         </div>
         <p className="thinFont p-2 md:w-7/12"> </p>
       </div>
+      {/* ///////////////Bottom///////////////////// */}
+
+      <div className="flex justify-center p-24 ">
+        <div className="w-3/4">
+          <BackButtonAnim />
+        </div>
+      </div>
     </div>
   );
-};
+}

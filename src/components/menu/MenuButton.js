@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { animated, useTransition, useSpring } from "react-spring";
 import Portal from "../utilities/Portal";
-import { HambugerAnimMenu } from "../utilities/HambugerAnimMenu";
+import HambugerAnimMenu from "../utilities/HambugerAnimMenu";
 
 import Menu from "./Menu";
 
@@ -11,13 +11,13 @@ const MenuButton = ({ hideMenuBar }) => {
   const [isMenuToggled, setMenuToggle] = useState(false);
 
   const fader = useSpring({
-    opacity: isMenuToggled ? 1 : 0
+    opacity: isMenuToggled ? 1 : 0,
   });
 
   const fadeMenuButton = useTransition(isMenuToggled, null, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 }
+    leave: { opacity: 0 },
   });
 
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Default() {
+export default function TriviaGame() {
   return (
     <div className="bg-bgColor pt-32 md:pt-48 h-screen">
       <div className="w-full flex justify-center">

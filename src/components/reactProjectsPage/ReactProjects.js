@@ -1,9 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { CodeSketchModule } from "../homePage/CodeSketchModule";
+import CodeSketchModule from "../homePage/CodeSketchModule";
 import FullAppModule from "../homePage/FullAppModule";
 import codeSketches from "../../data/code_sketches_data.json";
 import fullApps from "../../data/full_apps_data.json";
+import BackButtonAnim from "../utilities/BackButtonAnim";
 
 function ReactProjects({ location }) {
   return (
@@ -13,7 +14,7 @@ function ReactProjects({ location }) {
           React Projects
         </h2>
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center pt-12 ">
         <body className="  flex  flex-wrap justify-center footerColor  border border-gray-900 pb-6">
           {/* Full  Applications bellow */}
 
@@ -26,7 +27,7 @@ function ReactProjects({ location }) {
             </p>
           </div>
           <section className="pb-10 ">
-            {fullApps.map(app => (
+            {fullApps.map((app) => (
               <FullAppModule
                 key={app.title}
                 title={app.title}
@@ -47,7 +48,7 @@ function ReactProjects({ location }) {
               coding workflows, libraries, and techniques.
             </p>
           </div>
-          {codeSketches.map(sketch => (
+          {codeSketches.map((sketch) => (
             <CodeSketchModule
               image={sketch.image}
               title={sketch.title}
@@ -56,6 +57,13 @@ function ReactProjects({ location }) {
             />
           ))}
         </body>
+      </div>
+{" "}
+      {/* ///////////////Bottom///////////////////// */}
+      <div className="flex justify-center p-24 ">
+        <div className="w-3/4">
+          <BackButtonAnim />
+        </div>
       </div>
     </div>
   );

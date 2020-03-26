@@ -2,7 +2,13 @@
   {
     "title": "SVG Logo Animations",
     "image": "svg_anims.jpg",
-    "about": "Figma, Framer Motion Library",
+    "about": "Figma, Framer Motion",
     "link": "/work/coding/menu-animation"
+  },
+  {
+    "title": "Trivia Game",
+    "image": "trivia.jpg",
+    "about": "Firebase, Open Trivia DB, React",
+    "link": "/work/coding/trivia-game"
   }
 ]

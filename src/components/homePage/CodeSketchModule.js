@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-export const CodeSketchModule = ({ title, link, image }) => {
+export default function CodeSketchModule({ title, link, image }) {
   return (
     <>
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -10,7 +11,10 @@ export const CodeSketchModule = ({ title, link, image }) => {
           </h3>
 
           <div className=" h-32 md:h-48   w-32 md:w-48  relative">
-            <div className="  h-32 md:h-48  w-32 md:w-48 hover:bg-blue-800 w-full rounded-full absolute opacity-75"></div>
+            <motion.div
+              whileHover={{ opacity: 0.8 }}
+              className="h-32 md:h-48  w-32 md:w-48  bg-blue-800 w-full rounded-full absolute opacity-0"
+            />
             <img
               className=" w-full rounded-full border-2 border-gray-600 boxShadow1 "
               src={require(`../../images/code_stills/${image}`)}
@@ -21,4 +25,4 @@ export const CodeSketchModule = ({ title, link, image }) => {
       </a>
     </>
   );
-};
+}

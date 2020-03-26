@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import BackButtonAnim from "../utilities/BackButtonAnim";
 
 function AboutMe() {
   return (
@@ -21,15 +22,20 @@ function AboutMe() {
           </div>
           <div className="md:w-7/12 flex justify-start  items-start flex-wrap">
             <h3 className="w-full blackFont text-4xl py-4 text-center md:text-left ">
-              Hello, <span className="thinFont text-3xl">I'm</span>{" "}
-              <span className="eheavyFont text-3xl">Kyle Humphrey</span>{" "}
-              <span className="thinFont text-3xl">and I </span>{" "}
+              Hello, 
+{' '}
+<span className="thinFont text-3xl">I'm</span>{" "}
+              <span className="eheavyFont text-3xl">Kyle Humphrey</span>
+{" "}
+              <span className="thinFont text-3xl">and I </span>
+{" "}
             </h3>
             <h3 className="blackFont text-6xl w-full leading-none text-indigo-200 text-center md:text-left md:p-20">
               <p className="tracking-widest">ENJOY</p>
               <p className=" text-indigo-300 text-5xl">ENABLING</p>
               <p className=" text-indigo-400 ">
-                <span className="pr-1  text-red-500">:D</span>ESIGN
+                <span className="pr-1  text-red-500">:D</span>
+                ESIGN
               </p>
             </h3>
             <p className="heavyFont md:text-2xl mx-4 pb-12 text-center tracking-wide text-indigo-100 w-full border-b-8 border-dotted">
@@ -75,14 +81,16 @@ function AboutMe() {
             &nbsp;
             <p>
               {" "}
-              or{" "}
+              or
+{" "}
               <a
                 download="resume"
                 className="text-blue-500 underline"
                 href={require("../../images/resume.pdf")}
               >
                 download
-              </a>{" "}
+              </a>
+{" "}
               my resume
             </p>
           </div>
@@ -107,6 +115,14 @@ function AboutMe() {
               alt="mypic"
             />
           </a>
+        </div>
+      </div>
+
+      {/* ///////////////Bottom///////////////////// */}
+
+      <div className="flex justify-center p-24 ">
+        <div className="w-3/4">
+          <BackButtonAnim />
         </div>
       </div>
     </div>

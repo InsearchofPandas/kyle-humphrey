@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Imagesviewer from "./ImagesViewer";
+import BackButtonAnim from "../utilities/BackButtonAnim";
 
 const images = [
   "peter_parker.jpg",
@@ -14,7 +15,7 @@ const images = [
   "frozen.jpg",
   "anna.jpg",
   "sanFran.jpg",
-  "baymax.jpg"
+  "baymax.jpg",
 ];
 
 function FilmWork({ location }) {
@@ -22,7 +23,7 @@ function FilmWork({ location }) {
     top: "0",
     left: "0",
     width: "100%",
-    height: "100%"
+    height: "100%",
   };
   return (
     <div className="w-full bg-bgColor py-32  md:py-20 border-b border-gray-700 ">
@@ -40,7 +41,7 @@ function FilmWork({ location }) {
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
-          ></iframe>
+          />
         </div>
       </section>
       <section className="w-full flex flex-wrap justify-center   ">
@@ -127,7 +128,7 @@ function FilmWork({ location }) {
         <p className="w-full p-2 md:w-10/12 thinFont  text-xl  text-center  ">
           <span className="heavyFont">
             Lighting and Look Development Artists
-          </span>{" "}
+          </span>
           are responsible for taking direction in the form of notes from the
           director and concept artwork from the art director and then crafting
           the final visual aesthetics and image output for the film. The job is
@@ -142,15 +143,22 @@ function FilmWork({ location }) {
           the audience will interpret every creative decision they make.
         </p>
         <p className="w-full p-2 md:w-10/12 thinFont  text-xl  text-center  ">
-          <span className="heavyFont">Technical Director</span> – Data
-          management is crucial for feature film computer animation. There is a
-          rigid pipeline put together by engineers to enable this process. A
-          technical director is the bridge between the artists and the engineers
-          who handle technical difficulties. These problems arise within the
+          <span className="heavyFont">Technical Director</span>– Data management
+          is crucial for feature film computer animation. There is a rigid
+          pipeline put together by engineers to enable this process. A technical
+          director is the bridge between the artists and the engineers who
+          handle technical difficulties. These problems arise within the
           pipeline that has been built to achieve the desired artistic look in a
           fast-paced environment with very tight deadlines.
         </p>
       </section>
+      {/* ///////////////Bottom///////////////////// */}
+
+      <div className="flex justify-center p-24 ">
+        <div className="w-3/4">
+          <BackButtonAnim />
+        </div>
+      </div>
     </div>
   );
 }

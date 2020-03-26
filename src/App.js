@@ -12,14 +12,12 @@ import ReactProjects from "./components/reactProjectsPage/ReactProjects";
 import FilmWork from "./components/filmWorkPage/FilmWork";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactPage";
-import { NeuWeather } from "./components/reactProjectsPage/NeuWeather";
-import { MenuAnim } from "./components/reactProjectsPage/MenuAnim";
-import { BackButtonAnimPage } from "./components/reactProjectsPage/BackButtonAnimPage";
+import NeuWeather from "./components/reactProjectsPage/NeuWeather";
+import MenuAnim from "./components/reactProjectsPage/MenuAnim";
+import TriviaGame from "./components/reactProjectsPage/TriviaGame";
 import KyleHumphrey from "./components/reactProjectsPage/KyleHumphrey";
 
 require("dotenv").config();
-
-const penis = "shit";
 
 function App() {
   const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
@@ -49,9 +47,10 @@ function App() {
             />
             <Route
               exact
-              path="/work/coding/backbutton-animation"
-              component={BackButtonAnimPage}
+              path="/work/coding/trivia-game"
+              component={TriviaGame}
             />
+
             <Route path="/work/film-games" component={FilmWork} />
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={ContactForm} />
