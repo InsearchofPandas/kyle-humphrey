@@ -12,7 +12,7 @@ export default function ExerciseAppModule({ image, title, link, about }) {
             className="absolute w-full h-full opacity-0"
             whileHover={{ opacity: 1 }}
           >
-            <div className="relative  flex justify-center items-center w-full h-full ">
+            <div className="relative  flex flex-col justify-center items-center w-full h-full ">
               <div className="h-full w-full   bg-blue-800   absolute" />
               <p className="absolute">{about}</p>
             </div>

@@ -74,49 +74,49 @@ function FilmWork({ location }) {
           Traditional programming and scripting skills are utilized for
           uninhibited control of the data.
         </p>
-        <div className="w-full md:w-10/12 flex justify-center flex-wrap px-1 pb-10">
+        <div className="w-full md:w-10/12 flex flex-row  items-start flex-wrap px-1 pb-10">
           <img
-            className="w-1/3"
+            className="w-1/3 "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0001.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0002.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0003.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0004.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0005.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0006.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0007.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0008.jpg")}
           />
           <img
-            className="w-1/3"
+            className="w-1/3 h-auto  "
             alt="frame 1"
             src={require("../../images/frame_by_frame/dive_bomb_0009.jpg")}
           />
@@ -129,11 +129,11 @@ function FilmWork({ location }) {
           <span className="heavyFont">
             Lighting and Look Development Artists
           </span>
-          are responsible for taking direction in the form of notes from the
-          director and concept artwork from the art director and then crafting
-          the final visual aesthetics and image output for the film. The job is
-          a balance between traditional artistry and engineering. An artist must
-          not only create the visual image, but they must also construct dynamic
+          &nbsp; are responsible for taking direction from the director and
+          concept artwork from the art director and then crafting the final
+          visual aesthetics and image output for the film. The job is a balance
+          between traditional artistry and engineering. An artist must not only
+          create the visual image, but they must also construct dynamic
           technical rigs that manipulate data to achieve the results in
           animation. Being responsible for all the final images that appear in
           the film gives the lighting artist the ability to set the visual mood
@@ -143,11 +143,11 @@ function FilmWork({ location }) {
           the audience will interpret every creative decision they make.
         </p>
         <p className="w-full p-2 md:w-10/12 thinFont  text-xl  text-center  ">
-          <span className="heavyFont">Technical Director</span>– Data management
-          is crucial for feature film computer animation. There is a rigid
-          pipeline put together by engineers to enable this process. A technical
-          director is the bridge between the artists and the engineers who
-          handle technical difficulties. These problems arise within the
+          <span className="heavyFont">Technical Director</span> – Data
+          management is crucial for feature film computer animation. There is a
+          rigid pipeline put together by engineers to enable this process. A
+          technical director is the bridge between the artists and the engineers
+          who handle technical difficulties. These problems arise within the
           pipeline that has been built to achieve the desired artistic look in a
           fast-paced environment with very tight deadlines.
         </p>

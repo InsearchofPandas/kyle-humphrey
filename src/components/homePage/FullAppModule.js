@@ -51,30 +51,30 @@ const FullAppModule = ({ title, about, id, image_name, link }) => {
   const fadeImage = useTransition(isToggled, null, {
     from: { transform: "translate3d( 0, 0,0)", opacity: 0 },
     enter: { transform: "translate3d(0, 0,0)", opacity: 0.33 },
-    leave: { transform: "translate3d(0, 0,0)", opacity: 0 }
+    leave: { transform: "translate3d(0, 0,0)", opacity: 0 },
   });
 
   const titleTopTransition = useTransition(isToggled, null, {
     from: { transform: "translate3d( 0,-100px,0)", opacity: 0 },
     enter: { transform: "translate3d(0,-30px,0)", opacity: 1 },
-    leave: { transform: "translate3d(0,-5px,0)", opacity: 0 }
+    leave: { transform: "translate3d(0,-5px,0)", opacity: 0 },
   });
 
   const titleSlideTransition = useTransition(isToggled, null, {
     from: { transform: "translate3d(-100px,0,0)", opacity: 0 },
     enter: { transform: "translate3d(0px,0,0)", opacity: 1 },
-    leave: { transform: "translate3d(50px,0,0)", opacity: 0 }
+    leave: { transform: "translate3d(50px,0,0)", opacity: 0 },
   });
 
   const titleBottomTransition = useTransition(isToggled, null, {
     from: { transform: "translate3d( 0, 100px,0)", opacity: 0 },
     enter: { transform: "translate3d(0, 30px,0)", opacity: 1 },
-    leave: { transform: "translate3d(0, 5px,0)", opacity: 0 }
+    leave: { transform: "translate3d(0, 5px,0)", opacity: 0 },
   });
 
   // GET HEIGHT OF MODULE INSTANCE FROM STATE AND TURN INTO CSS INLINE STYLE
   const imageHeight = {
-    height: `${height}px`
+    height: `${height}px`,
   };
 
   return (
@@ -144,7 +144,10 @@ const FullAppModule = ({ title, about, id, image_name, link }) => {
           )}
         </div>
 
-        <div className="flex w-full justify-center " ref={ref}>
+        <div
+          className="flex w-full justify-center flex-row  items-start "
+          ref={ref}
+        >
           <img
             className="w-full px-1 "
             src={require(`../../images/code_stills/${image_name}`)}
