@@ -10,5 +10,11 @@
     "image": "trivia.jpg",
     "about": "Firebase, Open Trivia DB, React",
     "link": "/work/coding/trivia-game"
+  },
+  {
+    "title": "Picture Bay",
+    "image": "picture_bay.jpg",
+    "about": "React, Pixabay API",
+    "link": "/work/coding/picture-bay"
   }
 ]

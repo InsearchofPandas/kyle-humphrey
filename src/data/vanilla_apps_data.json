@@ -1,5 +1,11 @@
 [
   {
+    "title": "Video Landing Page",
+    "image": "landing_page.jpg",
+    "about": "JS, CSS",
+    "link": "/work/coding/video-landing"
+  },
+  {
     "title": "Word Finder",
     "image": "word_finder.jpg",
     "about": "JS, REGEX, CSS",
@@ -14,8 +20,14 @@
   {
     "title": "Infinite Scroll Blog",
     "image": "infinite.jpg",
-    "about": "JS, JSONPlaceholder, CSS",
+    "about": "JS, JSON Placeholder API, CSS",
     "link": "/work/coding/infinite-scroll"
+  },
+  {
+    "title": "Loading Bars",
+    "image": "loading_bars.jpg",
+    "about": "JS, CSS",
+    "link": "/work/coding/loading-bars"
   },
   {
     "title": "Theater Seat Picker",

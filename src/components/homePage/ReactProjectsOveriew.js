@@ -69,7 +69,7 @@ function ReactProjectsOveriew() {
               </div>
 
               <h3 className=" text-2xl border-b border-gray-900 pt-4 ">
-                Vanilla JS Projects
+                Vanilla JS Sketches
               </h3>
               <p className="text-center text-sm md:text-lg thinFont w-full py-2">
                 This section is composed of applications built with Javascript
@@ -89,7 +89,7 @@ function ReactProjectsOveriew() {
               </div>
 
               <h3 className=" text-2xl border-b border-gray-900 pt-4 ">
-                Early React Apps
+                Early React App Sketches
               </h3>
               <p className="text-center text-sm thinFont w-full py-2">
                 Many projects below are not adaptive or responsive and can only

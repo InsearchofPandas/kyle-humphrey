@@ -20,6 +20,9 @@ import Validator from "./components/reactProjectsPage/Validator";
 import KyleHumphrey from "./components/reactProjectsPage/KyleHumphrey";
 import InfiniteScroll from "./components/reactProjectsPage/InfiniteScroll";
 import TheaterPicker from "./components/reactProjectsPage/TheaterPicker";
+import VideoLandingPage from "./components/reactProjectsPage/VideoLandingPage";
+import LoadingBars from "./components/reactProjectsPage/LoadingBars";
+import PictureBay from "./components/reactProjectsPage/PictureBay";
 
 require("dotenv").config();
 
@@ -74,7 +77,21 @@ function App() {
               path="/work/coding/theater-picker"
               component={TheaterPicker}
             />
-
+            <Route
+              exact
+              path="/work/coding/video-landing"
+              component={VideoLandingPage}
+            />
+            <Route
+              exact
+              path="/work/coding/loading-bars"
+              component={LoadingBars}
+            />
+            <Route
+              exact
+              path="/work/coding/picture-bay"
+              component={PictureBay}
+            />
             <Route path="/work/film-games" component={FilmWork} />
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={ContactForm} />
